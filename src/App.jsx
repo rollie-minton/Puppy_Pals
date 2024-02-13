@@ -1,9 +1,9 @@
 import { useState } from 'react'
 //import viteLogo from '/vite.svg'
 //import './App.css'
-import {puppyList} from './data.js'
+import { puppyList } from './data.js'
 
-function App() {
+export function App() {
   const [puppies, setPuppies] = useState(puppyList);
 
   console.log("puppyList: ", puppyList);
@@ -16,6 +16,6 @@ function App() {
         })
       }
     </div>
-      
-  )
+  );
 }
+
