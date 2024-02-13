@@ -3,20 +3,19 @@ import { useState } from 'react'
 //import './App.css'
 import {puppyList} from './data.js'
 
-const [puppies, setPuppies] = useState(puppyList);
+function App() {
+  const [puppies, setPuppies] = useState(puppyList);
 
-console.log(puppies);
+  console.log("puppyList: ", puppyList);
 
-
-  //return (
-    //<>
-      <div>{
+  return (
+    <div className = "App">
+      {
         puppies.map((puppy) => {
-          return <p>{puppy.name}</p>
+          return <p key = {puppy.id}>{puppy.name}</p>;
         })
-        }
-      </div>
+      }
+    </div>
       
-   // </>
-  //)
-
+  )
+}
