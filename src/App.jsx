@@ -3,7 +3,7 @@ import { useState } from 'react'
 //import './App.css'
 import { puppyList } from './data.js'
 
-export function App() {
+export default function App() {
   const [puppies, setPuppies] = useState(puppyList);
 
   console.log("puppyList: ", puppyList);
